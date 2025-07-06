@@ -1,1 +1,1 @@
-# Athlete-Face-Recognition-using-Haar-Cascades
+# Athlete Face Recognition using Haar Cascades
