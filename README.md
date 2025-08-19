@@ -1,6 +1,3 @@
-# Athlete Face Recognition using Haar Cascades
-#### Dataset link https://drive.google.com/drive/folders/1Gduv8Qd97gfbwuIu-42uU66VUSgX4NcC?usp=sharing
-
 # Athlete Face Recognition using Haar Cascades & Machine Learning  
 
 This project implements an **Athlete Face Recognition system** using **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and **Machine Learning models**.  
@@ -10,7 +7,7 @@ The pipeline automatically detects, crops, and processes athlete faces from a da
 
 - Dataset used: [Athletes Face Dataset (Google Drive)](https://drive.google.com/drive/folders/1Gduv8Qd97gfbwuIu-42uU66VUSgX4NcC?usp=sharing)  
 - Structure:  
-
+'''
 athletes\_dataset\_4/
 ├── Athlete1/
 │   ├── img1.jpg
@@ -19,7 +16,7 @@ athletes\_dataset\_4/
 ├── Athlete2/
 ├── Athlete3/
 └── ...
-
+'''
 - Each folder contains images of a single athlete.  
 - Cropped and preprocessed faces are saved in:  
 
