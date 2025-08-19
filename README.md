@@ -20,9 +20,9 @@ athletes\_dataset\_4/
 - Each folder contains images of a single athlete.  
 - Cropped and preprocessed faces are saved in:  
 
-
+```
 athletes\_dataset\_4/cropped/
-
+```
 ## Methodology  
 
 ### 1. Face & Eye Detection  
@@ -61,7 +61,7 @@ athletes\_dataset\_4/cropped/
 - **Accuracy:** ~66% on test set  
 - **Classification Report (excerpt):**
 
-
+```
           precision    recall  f1-score   support
 
 
@@ -70,7 +70,7 @@ Athlete2       0.63      0.86      0.73
 Athlete3       0.69      0.85      0.76
 ...
 Overall        0.66      0.66      0.66
-
+```
 
 
 - **Confusion Matrix:**  
@@ -107,18 +107,5 @@ pip install opencv-python numpy matplotlib pywavelets scikit-learn seaborn jobli
 4. Preprocessed cropped images will be generated in `athletes_dataset_4/cropped/`.
 5. Training, evaluation, and model saving will run automatically.
 
-
-## Future Improvements
-
-* Improve accuracy using **Deep Learning (CNNs / Transfer Learning)**.
-* Balance dataset with **data augmentation**.
-* Add a **real-time recognition pipeline** using webcam feed.
-
-
-## Acknowledgements
-
-* OpenCV Haar Cascades for face & eye detection.
-* PyWavelets for DWT-based feature extraction.
-* Scikit-learn for model training and evaluation.
 
 
