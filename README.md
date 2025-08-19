@@ -20,16 +20,11 @@ athletes\_dataset\_4/
 ├── Athlete3/
 └── ...
 
-```
 - Each folder contains images of a single athlete.  
 - Cropped and preprocessed faces are saved in:  
-```
+
 
 athletes\_dataset\_4/cropped/
-
-```
-
----
 
 ## Methodology  
 
@@ -68,11 +63,10 @@ athletes\_dataset\_4/cropped/
 - **Best Model:** SVM (Linear Kernel, C=1)  
 - **Accuracy:** ~66% on test set  
 - **Classification Report (excerpt):**
-```
 
-```
+
           precision    recall  f1-score   support
-```
+
 
 Athlete1       0.62      0.44      0.52
 Athlete2       0.63      0.86      0.73
@@ -80,7 +74,7 @@ Athlete3       0.69      0.85      0.76
 ...
 Overall        0.66      0.66      0.66
 
-```
+
 
 - **Confusion Matrix:**  
 Visualized with Seaborn heatmap to inspect per-class performance.  
@@ -89,18 +83,12 @@ Visualized with Seaborn heatmap to inspect per-class performance.
 ## Model Export  
 
 - Best classifier is saved as:  
-```
 
 saved\_model.pkl
 
-```
 - Athlete → Class index mapping stored in:  
-```
 
 class\_dictionary.json
-
-````
-
 
 ## Installation & Usage  
 
@@ -136,4 +124,4 @@ pip install opencv-python numpy matplotlib pywavelets scikit-learn seaborn jobli
 * PyWavelets for DWT-based feature extraction.
 * Scikit-learn for model training and evaluation.
 
-```
+
