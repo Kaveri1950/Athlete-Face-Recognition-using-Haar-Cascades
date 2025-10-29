@@ -1,4 +1,3 @@
-```
 # Athlete Face Recognition using Haar Cascades, Wavelet Transforms & Stacked Machine Learning Models  
 
 This project implements an **Athlete Face Recognition System** leveraging **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and a range of **Machine Learning models**, including **SVM**, **KNN**, **Random Forest**, **Logistic Regression**, **XGBoost**, and **Stacking Classifiers**.  
