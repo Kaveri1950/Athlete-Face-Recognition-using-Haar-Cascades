@@ -19,7 +19,6 @@ celebrity_dataset_final/
 ├── Athlete2/
 ├── Athlete3/
 └── ...
-```
 
 - Each subfolder contains images of a single athlete.  
 - Cropped faces are automatically generated and stored in:
