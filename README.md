@@ -1,8 +1,8 @@
-# Athlete Face Recognition using Haar Cascades, Wavelet Transforms & Stacked Machine Learning Models  
+# Celebrity Face Recognition using Haar Cascades  
 
-This project implements an **Athlete Face Recognition System** leveraging **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and a range of **Machine Learning models**, including **SVM**, **KNN**, **Random Forest**, **Logistic Regression**, **XGBoost**, and **Stacking Classifiers**.  
+This project implements an **Celebrity Face Recognition System** leveraging **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and a range of **Machine Learning models**, including **SVM**, **KNN**, **Random Forest**, **Logistic Regression**, **XGBoost**, and **Stacking Classifiers**.  
 
-The system automatically detects, crops, and processes athlete faces, extracts powerful features combining spatial and frequency domains, and classifies them into athlete categories using supervised learning techniques.
+The system automatically detects, crops, and processes celebrity faces, extracts powerful features combining spatial and frequency domains, and classifies them into celebrity categories using supervised learning techniques.
 
 
 ## Dataset  
@@ -12,22 +12,20 @@ The system automatically detects, crops, and processes athlete faces, extracts p
 - Structure:
 ```
 celebrity_dataset_final/
-├── Athlete1/
+├── Celebrity1/
 │   ├── img1.jpg
 │   ├── img2.jpg
 │   └── ...
-├── Athlete2/
-├── Athlete3/
+├── Celebrity2/
+├── Celebrity3/
 └── ...
 ```
 
-- Each subfolder contains images of a single athlete.  
+- Each subfolder contains images of a single celebrity.  
 - Cropped faces are automatically generated and stored in:
 ```
 celebrity_dataset_final/cropped/
 ```
-
-After filtering out classes with fewer than **40 valid cropped images**, **3 athlete classes** were retained for model training.
 
 ## Methodology  
 
@@ -42,8 +40,7 @@ After filtering out classes with fewer than **40 valid cropped images**, **3 ath
 - Raw image (32×32×3) and wavelet-transformed image (32×32) are vertically combined, resulting in a **4096-dimensional feature vector**.  
 
 ### 3. Dataset Cleaning  
-- Classes with fewer than 40 images are removed to ensure reliable training data.  
-- Final dataset consists of 3 valid athlete categories.  
+- Classes with fewer than 40 images are removed to ensure reliable training data.   
 
 ### 4. Model Training & Selection  
 Multiple models were trained and compared using **GridSearchCV** and cross-validation:
@@ -86,7 +83,7 @@ Each model’s performance was optimized via grid search for best hyperparameter
 **Overall Accuracy:** 87.8%  
 **Macro Avg F1-Score:** 0.82  
 
-The stacked model significantly outperformed individual classifiers, achieving highly reliable classification on the athlete dataset.
+The stacked model significantly outperformed individual classifiers, achieving highly reliable classification on the celebrity dataset.
 
 
 ## Model Export  
@@ -110,29 +107,14 @@ pip install opencv-python numpy matplotlib pywavelets scikit-learn seaborn jobli
 ### Run the Project  
 
 1. Clone the repository and download the dataset.  
-2. Place Haar Cascade XML files in the directory:  
-   ```
-   ./opencv/haarcascades/
-   ```
-3. Run the main script:  
+2. Run the main script:  
    ```bash
-   python athlete_face_recognition.py
+   python celebrity_face_recognition.ipynb
    ```
 4. Cropped face images will be saved in:  
    ```
-   celebrity_dataset_final/cropped/
+   celebrity_dataset/cropped/
    ```
 5. Training, evaluation, and model saving will be executed automatically.  
 
-
-## Key Highlights  
-
-- Automated face and eye detection pipeline using OpenCV.  
-- DWT-based feature extraction enhancing frequency domain recognition.  
-- Multi-model pipeline with hyperparameter tuning and cross-validation.  
-- Final stacked ensemble model achieving 87.8% accuracy.  
-- Saved model ready for real-time prediction and deployment.  
-```
-```
-
-This will render your entire new README as a code block when copied into your documentation, following GitHub markdown code-block conventions.[1][3]
+ 
