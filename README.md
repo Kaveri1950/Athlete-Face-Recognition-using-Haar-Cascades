@@ -4,7 +4,6 @@ This project implements an **Celebrity Face Recognition System** leveraging **Op
 
 The system automatically detects, crops, and processes celebrity faces, extracts powerful features combining spatial and frequency domains, and classifies them into celebrity categories using supervised learning techniques.
 
-***
 
 ## Dataset  
 
