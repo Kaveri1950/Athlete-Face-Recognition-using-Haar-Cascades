@@ -1,17 +1,16 @@
-# Athlete Face Recognition using Haar Cascades, Wavelet Transforms & Stacked Machine Learning Models  
+# Celebrity Face Recognition using Haar Cascades 
 
-This project implements an **Athlete Face Recognition System** leveraging **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and a range of **Machine Learning models**, including **SVM**, **KNN**, **Random Forest**, **Logistic Regression**, **XGBoost**, and **Stacking Classifiers**.  
+This project implements an **Celebrity Face Recognition System** leveraging **OpenCV Haar Cascade Classifiers**, **Wavelet Transforms**, and a range of **Machine Learning models**, including **SVM**, **KNN**, **Random Forest**, **Logistic Regression**, **XGBoost**, and **Stacking Classifiers**.  
 
-The system automatically detects, crops, and processes athlete faces, extracts powerful features combining spatial and frequency domains, and classifies them into athlete categories using supervised learning techniques.
+The system automatically detects, crops, and processes celebrity faces, extracts powerful features combining spatial and frequency domains, and classifies them into celebrity categories using supervised learning techniques.
 
 ***
 
 ## Dataset  
 
-- Dataset used: [Athletes Face Dataset (Google Drive)](https://drive.google.com/drive/folders/1Gduv8Qd97gfbwuIu-42uU66VUSgX4NcC?usp=sharing)
+- Dataset used: [Athletes Face Dataset (Google Drive)](https://drive.google.com/drive/folders/1kbfKoPydhSNZbGJA3odW8G_R2C7pJEW0?usp=drive_link)
   
 - Structure:
-```
 celebrity_dataset_final/
 ├── Athlete1/
 │   ├── img1.jpg
@@ -24,12 +23,7 @@ celebrity_dataset_final/
 
 - Each subfolder contains images of a single athlete.  
 - Cropped faces are automatically generated and stored in:
-```
 celebrity_dataset_final/cropped/
-```
-
-After filtering out classes with fewer than **40 valid cropped images**, **3 athlete classes** were retained for model training.
-
 ***
 
 ## Methodology  
@@ -46,7 +40,6 @@ After filtering out classes with fewer than **40 valid cropped images**, **3 ath
 
 ### 3. Dataset Cleaning  
 - Classes with fewer than 40 images are removed to ensure reliable training data.  
-- Final dataset consists of 3 valid athlete categories.  
 
 ### 4. Model Training & Selection  
 Multiple models were trained and compared using **GridSearchCV** and cross-validation:
@@ -99,10 +92,9 @@ The stacked model significantly outperformed individual classifiers, achieving h
 
 The best-performing tuned stacked model and class mapping were saved as:
 
-```
+
 models/stacking_tuned_model.pkl
 models/class_dict.pkl
-```
 
 ***
 
