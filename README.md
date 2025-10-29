@@ -7,7 +7,7 @@ The system automatically detects, crops, and processes celebrity faces, extracts
 
 ## Dataset  
 
-- Dataset used: [Athletes Face Dataset (Google Drive)](https://drive.google.com/drive/folders/1Gduv8Qd97gfbwuIu-42uU66VUSgX4NcC?usp=sharing)
+- Dataset used: [Celebrity Face Dataset (Google Drive)](https://drive.google.com/drive/folders/1Gduv8Qd97gfbwuIu-42uU66VUSgX4NcC?usp=sharing)
   
 - Structure:
 ```
